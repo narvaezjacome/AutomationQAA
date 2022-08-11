@@ -1,0 +1,13 @@
+09:26:23.960 evaluation of 'karate-config.js' failed: evaluation (js) failed: read('classpath:karate-config.js'), java.lang.RuntimeException: evaluation (js) failed: function() {
+var env= karate.env;
+var properties - read('classpath:karate-properties.json')
+if(!env){
+env = 'dev';
+}
+var config = properties[env];
+return config;
+}, javax.script.ScriptException: <eval>:3:15 Expected ; but found -
+var properties - read('classpath:karate-properties.json')
+               ^ in <eval> at line number 3 at column number 15
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+stack trace: com.intuit.karate.ScriptBindings.eval(ScriptBindings.java:155)
