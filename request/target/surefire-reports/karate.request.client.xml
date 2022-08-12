@@ -1,0 +1,8 @@
+<testsuite failures="0" name="karate/request/client.feature" skipped="0" tests="1" time="1.563393">
+  <testcase classname="karate.request.client" name="Check the service get method" time="1.563393">
+    <system-out>* url url ................................................................. passed
+Given path 'users','2' .................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

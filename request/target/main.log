@@ -1,13 +1,30 @@
-09:26:23.960 evaluation of 'karate-config.js' failed: evaluation (js) failed: read('classpath:karate-config.js'), java.lang.RuntimeException: evaluation (js) failed: function() {
-var env= karate.env;
-var properties - read('classpath:karate-properties.json')
-if(!env){
-env = 'dev';
+10:27:20.616 request:
+1 > POST https://reqres.in/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 34
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+{"name":"morpheus","job":"leader"}
+
+10:27:21.610 response time in milliseconds: 989,57
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 739a3c082c1e3ed7-BOG
+1 < Connection: keep-alive
+1 < Content-Length: 84
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 12 Aug 2022 15:27:20 GMT
+1 < Etag: W/"54-/L8JOxqa1k02Ke7BmxI63QpGK+E"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vLAiRopbyZegC5COHKxJkOJwKIE%2BfjAZxlO5DV69PdxXFNEpTqC3sINezEQwaIQufyPMi72LzMeEdvN2sOhjdm1Yz0xVXuGZ4be3p25IRnBwC2qCRuqX7Ncn4g%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"name":"morpheus","job":"leader","id":"442","createdAt":"2022-08-12T15:27:20.669Z"}
+
 }
-var config = properties[env];
-return config;
-}, javax.script.ScriptException: <eval>:3:15 Expected ; but found -
-var properties - read('classpath:karate-properties.json')
-               ^ in <eval> at line number 3 at column number 15
-stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
-stack trace: com.intuit.karate.ScriptBindings.eval(ScriptBindings.java:155)
+
