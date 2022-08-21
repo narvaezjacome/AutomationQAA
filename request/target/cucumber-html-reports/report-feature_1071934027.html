@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>herokuapp</td>
-            <td>12 ago 2022, 10:27</td>
+            <td>21 ago 2022, 10:13</td>
     </tr>
   </tbody>
 </table>
@@ -128,18 +128,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">karate/request/client.feature</td>
-          <td      class="passed"    >4</td>
+          <td      class="passed"    >8</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">4</td>
+          <td class="total">8</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="1563393200">1.563</td>
+          <td class="duration" data-value="2537627800">2.537</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -179,8 +179,8 @@ $(document).ready(function() {
 
   </div>
 
-        <div class="description indention">service client Get
-as QA Automation
+        <div class="description indention">Service client GET
+As QA Automation
   I want to consult a client
   To validate the status code and response</div>
 
@@ -270,7 +270,7 @@ as QA Automation
   </div>
 
   
-  <span class="lead-duration duration">1.563</span>
+  <span class="lead-duration duration">2.537</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
@@ -308,6 +308,31 @@ as QA Automation
           <div class="step">
         
 <div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responsesGet = read('classpath:karate/request/responseGet.json')</span>
+  
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">path 'users','2'</span>
   
@@ -336,7 +361,7 @@ as QA Automation
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
   
-  <span class="lead-duration duration">1.554</span>
+  <span class="lead-duration duration">2.476</span>
 
 </div>
 
@@ -353,27 +378,26 @@ as QA Automation
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>10:27:40.387 request:
+        <pre>10:13:40.513 request:
 1 &gt; GET https://reqres.in/api/users/2
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: reqres.in
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 
-10:27:40.939 response time in milliseconds: 546,52
+10:13:41.707 response time in milliseconds: 1184,42
 1 &lt; 200
 1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 2047
-1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 739a3c837fc13f15-BOG
+1 &lt; CF-Cache-Status: REVALIDATED
+1 &lt; CF-RAY: 73e45067e8c83eeb-BOG
 1 &lt; Cache-Control: max-age=14400
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Fri, 12 Aug 2022 15:27:40 GMT
+1 &lt; Date: Sun, 21 Aug 2022 15:13:41 GMT
 1 &lt; Etag: W/&quot;118-pbdwwFo9SKNhD3Lx5iHJyngpq00&quot;
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=pFAnzneWY6pNcDq4CfHVPn40qoOxCy%2F4v9nvHkoRoAWmAde9Q%2BxYP3Ag6v%2FgQgcIj8puJxjazTqvH264iHKT5z1sytf8t7WhJtVpeLqN%2BgPqtEoQ%2Bj4E1NE0Zg%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=oSXK%2FT4XiD0EaIlzau6ju%2BVBLmSnrUJc1NIhE4saLo%2B0buWHIF81WC4KyGwR76c2Edxoa%2BCSYrvaMYKgGbUDX57Gz6trKVLjZhnT0rbiXrUfu3mCpsADi6HB4Q%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Vary: Accept-Encoding
@@ -398,6 +422,81 @@ as QA Automation
   <span class="name">status 200</span>
   
   <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == responsesGet</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert response.support.text == &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;</span>
+  
+  <span class="lead-duration duration">0.020</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert response.data.email == email</span>
+  
+  <span class="lead-duration duration">0.016</span>
 
 </div>
 

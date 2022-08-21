@@ -37,9 +37,9 @@
           
 <div class="nav-count">
             
-<div class="bg-success" id="nav-pass">1</div>
+<div class="bg-success" id="nav-pass">0</div>
             
-<div class="bg-danger" id="nav-fail">0</div>
+<div class="bg-danger" id="nav-fail">1</div>
           
 </div>
         
@@ -47,11 +47,11 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2022-08-12 10:27:41 AM</div>        
+<div id="nav-date">2022-08-21 10:13:42 AM</div>        
       
 <div class="nav-container">
-<div class="nav-item passed">
-<a href="#[1:9]">[1:9] check the service POST Method </a>
+<div class="nav-item failed">
+<a href="#[1:9]">[1:9] check the service POST method </a>
 </div>
 </div>
 </div>
@@ -59,7 +59,7 @@
 <div id="content">
       
 <div class="page-heading alert alert-primary">
-<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">karate/request/create.feature</span><span class="feature-description">Service client POST | AS QA Automation&#13;
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">karate/request/create.feature</span><span class="feature-description">Service cliente POST | AS QA Automation&#13;
   I want to create a client&#13;
   To validate the status code and response</span>
 </div>
@@ -67,9 +67,9 @@
 <div class="scenario-heading" id="[1:9]">
 <div class="heading-container">
 <div class="scenario-tags"></div>
-<span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">check the service POST Method </span>
+<span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">check the service POST method </span>
 </div>
-<div class="scenario-time passed">ms: 516</div>
+<div class="scenario-time failed">ms: 26</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[1:9]bg">
@@ -88,64 +88,55 @@
 <div class="step-row">
 <div class="step-container" id="2">
 <div class="step-ref passed">2</div>
-<div class="step-cell passed">* def requestCreate = {"name": '#(name)',"job": '#(job)'}</div>
+<div class="step-cell passed">* def requestCreate = {"name": "#(name)", "job": "#(job)"}</div>
 </div>
-<div class="time-cell passed">25</div>
+<div class="time-cell passed">16</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="3">
-<div class="step-ref passed">3</div>
-<div class="step-cell passed">Given path 'users'</div>
+<div class="step-ref failed">3</div>
+<div class="step-cell failed">* def responsePost = read(''classpath:karate/request/responsePost.json)</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell failed">10</div>
 </div>
+<div class="preformatted" data-parent="3">create.feature:11 - evaluation (js) failed: read(''classpath:karate/request/responsePost.json), javax.script.ScriptException: &lt;eval&gt;:1:7 Expected , but found classpath&#13;
+read(''classpath:karate/request/responsePost.json)&#13;
+       ^ in &lt;eval&gt; at line number 1 at column number 7
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)</div>
 <div class="step-row">
 <div class="step-container" id="4">
-<div class="step-ref passed">4</div>
-<div class="step-cell passed">And request requestCreate</div>
+<div class="step-ref skipped">4</div>
+<div class="step-cell skipped">Given path 'users'</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell skipped">0</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="5">
-<div class="step-ref passed">5</div>
-<div class="step-cell passed">When method post</div>
+<div class="step-ref skipped">5</div>
+<div class="step-cell skipped">And request requestCreate</div>
 </div>
-<div class="time-cell passed">491</div>
+<div class="time-cell skipped">0</div>
 </div>
-<div class="preformatted" data-parent="5">10:27:41.165 request:
-1 &gt; POST https://reqres.in/api/users
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 34
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-{"name":"morpheus","job":"leader"}
-
-10:27:41.644 response time in milliseconds: 476,22
-1 &lt; 201
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 739a3c85c986f26b-BOG
-1 &lt; Connection: keep-alive
-1 &lt; Content-Length: 84
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Fri, 12 Aug 2022 15:27:40 GMT
-1 &lt; Etag: W/"54-GXXkAUQPfACx28wUe5teOXXMvdw"
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=CR8LUt7HxYiGjUorExZo1%2B99r03QBeqb4VSYvRjP1uOJZuEwqO5DxAL8kiOcHXsbdmo%2FnI3IdmDaHQe4gILdaeQsYyeaDIceO9lQmnn09xWXkvlYHl%2BFTbBCaA%3D%3D"}],"group":"cf-nel","max_age":604800}
-1 &lt; Server: cloudflare
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-{"name":"morpheus","job":"leader","id":"981","createdAt":"2022-08-12T15:27:40.714Z"}</div>
 <div class="step-row">
 <div class="step-container" id="6">
-<div class="step-ref passed">6</div>
-<div class="step-cell passed">Then status 201</div>
+<div class="step-ref skipped">6</div>
+<div class="step-cell skipped">When method post</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref skipped">7</div>
+<div class="step-cell skipped">Then status 201</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref skipped">8</div>
+<div class="step-cell skipped">And match response == responsePost</div>
+</div>
+<div class="time-cell skipped">0</div>
 </div>
 </div>
 </div>
