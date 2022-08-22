@@ -37,7 +37,7 @@
           
 <div class="nav-count">
             
-<div class="bg-success" id="nav-pass">1</div>
+<div class="bg-success" id="nav-pass">3</div>
             
 <div class="bg-danger" id="nav-fail">0</div>
           
@@ -47,11 +47,17 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2022-08-22 09:47:57 AM</div>        
+<div id="nav-date">2022-08-22 11:20:53 AM</div>        
       
 <div class="nav-container">
 <div class="nav-item passed">
 <a href="#[1:9]">[1:9] check the service POST method </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2.1:29]">[2.1:29] Create a users with different firstName </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2.2:30]">[2.2:30] Create a users with different firstName </a>
 </div>
 </div>
 </div>
@@ -69,7 +75,7 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">check the service POST method </span>
 </div>
-<div class="scenario-time passed">ms: 2256</div>
+<div class="scenario-time passed">ms: 1418</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[1:9]bg">
@@ -90,21 +96,21 @@
 <div class="step-ref passed">2</div>
 <div class="step-cell passed">* def requestCreate = {"name": "#(name)", "job": "#(job)"}</div>
 </div>
-<div class="time-cell passed">14</div>
+<div class="time-cell passed">3</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="3">
 <div class="step-ref passed">3</div>
 <div class="step-cell passed">* def responsePost = read('classpath:karate/request/create_user/responsePost.json')</div>
 </div>
-<div class="time-cell passed">9</div>
+<div class="time-cell passed">2</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="4">
 <div class="step-ref passed">4</div>
 <div class="step-cell passed">Given path 'users'</div>
 </div>
-<div class="time-cell passed">5</div>
+<div class="time-cell passed">1</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="5">
@@ -118,35 +124,35 @@
 <div class="step-ref passed">6</div>
 <div class="step-cell passed">When method post</div>
 </div>
-<div class="time-cell passed">2225</div>
+<div class="time-cell passed">1408</div>
 </div>
-<div class="preformatted" data-parent="6">09:47:55.950 request:
+<div class="preformatted" data-parent="6">11:20:50.657 request:
 1 &gt; POST https://reqres.in/api/users
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Content-Length: 35
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
 {"name":"morpheous","job":"leader"}
 
-09:47:57.226 response time in milliseconds: 1269,57
+11:20:51.646 response time in milliseconds: 988.88
 1 &lt; 201
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 73ec680c8ca0f26b-BOG
+1 &lt; CF-RAY: 73ecf02adc847ea2-LAX
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 85
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Mon, 22 Aug 2022 14:47:56 GMT
-1 &lt; Etag: W/"55-dFt5zpyHbPke9l+rRyfHxwC0vaI"
+1 &lt; Date: Mon, 22 Aug 2022 16:20:51 GMT
+1 &lt; Etag: W/"55-bAuQ/u6bNiViLEVosci9qTLpDvA"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=SfytftouUz6w0cceVfMzJwdfvP3fD4oNxlistvSAZLy6FBQNI9bBU%2BRSBDSW90w5OvkVRbldH%2B%2BY17fBLgzg%2FXhvpJGv6W8zXit%2Fr2ZjsoVL%2FE9r%2BYcGHIOg3Q%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ta8UAxyumMSaRNmtUandlYv5MVmCw%2FgeyjOmAj9M4Pw%2FVEBt%2FEyDM73Fe%2BRgPHArnUQm4M%2FFNT%2BpdNRmE9zJgeiNwO43IH%2B5EH3vAQuOysoWenPXVMCw1r9CAw%3D%3D"}],"group":"cf-nel","max_age":604800}
 1 &lt; Server: cloudflare
 1 &lt; Via: 1.1 vegur
 1 &lt; X-Powered-By: Express
-{"name":"morpheous","job":"leader","id":"597","createdAt":"2022-08-22T14:47:55.915Z"}</div>
+{"name":"morpheous","job":"leader","id":"102","createdAt":"2022-08-22T16:20:51.254Z"}</div>
 <div class="step-row">
 <div class="step-container" id="7">
 <div class="step-ref passed">7</div>
@@ -159,7 +165,177 @@
 <div class="step-ref passed">8</div>
 <div class="step-cell passed">And match response == responsePost</div>
 </div>
-<div class="time-cell passed">3</div>
+<div class="time-cell passed">4</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2.1:29]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [2.1:29]</span><span class="scenario-name">Create a users with different firstName </span>
+</div>
+<div class="scenario-time passed">ms: 956</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2.1:29]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2.1:29]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">* def requestBody = {"name": "Jos Alfredo", "job": "Teacher"}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">Given path 'users'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">And request requestBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">955</div>
+</div>
+<div class="preformatted" data-parent="13">11:20:51.698 request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 38
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"name":"Jos Alfredo","job":"Teacher"}
+
+11:20:52.652 response time in milliseconds: 950.77
+1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 73ecf030dff4323a-LAX
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 88
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 22 Aug 2022 16:20:52 GMT
+1 &lt; Etag: W/"58-iNJhj+F7WwYwIflW0Mcm9opJDHo"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2Bcvy%2FCQaKR6CI6URZ92FYiSbpke6ZyqqGcxcm77M8Fubj5o1KnbarAT7Z3VY8UwEk1t4iJnNE9%2BUdAwP3IebEbW67PY252OgNxePgNzx4Ve3U2ZzcMsdgBtM1Q%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"name":"Jos Alfredo","job":"Teacher","id":"301","createdAt":"2022-08-22T16:20:52.250Z"}</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2.2:30]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [2.2:30]</span><span class="scenario-name">Create a users with different firstName </span>
+</div>
+<div class="scenario-time passed">ms: 803</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2.2:30]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2.2:30]bg">
+<div class="step-container" id="15">
+<div class="step-ref bg-step">15</div>
+<div class="step-cell passed">* url url</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">* def requestBody = {"name": "#$%%", "job": "Doctor"}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">Given path 'users'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">And request requestBody</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">802</div>
+</div>
+<div class="preformatted" data-parent="19">11:20:52.672 request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 30
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"name":"#$%%","job":"Doctor"}
+
+11:20:53.470 response time in milliseconds: 797.50
+1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 73ecf036cd527c98-LAX
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 80
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 22 Aug 2022 16:20:53 GMT
+1 &lt; Etag: W/"50-hAy6CXAktCyQH04/SNZZxShLAJE"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7lAn2NdauLQE6Me%2BelGLtM13N59q%2FiRl5n%2F7FUNfdS5vzCulhwLDLvO1s4a%2Bme3iw0rftZvxd%2BZXLfT24zK79Ska2A%2BCSIeQOmn1QaKuViBae7kGjk319gk38Q%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"name":"#$%%","job":"Doctor","id":"270","createdAt":"2022-08-22T16:20:53.173Z"}</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
 </div>
 </div>
 </div>
