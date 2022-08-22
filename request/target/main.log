@@ -1,30 +1,31 @@
-10:27:20.616 request:
+09:47:55.950 request:
 1 > POST https://reqres.in/api/users
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 34
+1 > Content-Length: 35
 1 > Content-Type: application/json; charset=UTF-8
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
-{"name":"morpheus","job":"leader"}
+{"name":"morpheous","job":"leader"}
 
-10:27:21.610 response time in milliseconds: 989,57
+09:47:57.226 response time in milliseconds: 1269,57
 1 < 201
 1 < Access-Control-Allow-Origin: *
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 739a3c082c1e3ed7-BOG
+1 < CF-RAY: 73ec680c8ca0f26b-BOG
 1 < Connection: keep-alive
-1 < Content-Length: 84
+1 < Content-Length: 85
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Fri, 12 Aug 2022 15:27:20 GMT
-1 < Etag: W/"54-/L8JOxqa1k02Ke7BmxI63QpGK+E"
+1 < Date: Mon, 22 Aug 2022 14:47:56 GMT
+1 < Etag: W/"55-dFt5zpyHbPke9l+rRyfHxwC0vaI"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vLAiRopbyZegC5COHKxJkOJwKIE%2BfjAZxlO5DV69PdxXFNEpTqC3sINezEQwaIQufyPMi72LzMeEdvN2sOhjdm1Yz0xVXuGZ4be3p25IRnBwC2qCRuqX7Ncn4g%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=SfytftouUz6w0cceVfMzJwdfvP3fD4oNxlistvSAZLy6FBQNI9bBU%2BRSBDSW90w5OvkVRbldH%2B%2BY17fBLgzg%2FXhvpJGv6W8zXit%2Fr2ZjsoVL%2FE9r%2BYcGHIOg3Q%3D%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-{"name":"morpheus","job":"leader","id":"442","createdAt":"2022-08-12T15:27:20.669Z"}
+{"name":"morpheous","job":"leader","id":"597","createdAt":"2022-08-22T14:47:55.915Z"}
 
-}
+1.235 assertion failed: path: $.id, actual: '589', expected: '#number', reason: not a number
+ contributions towards server costs are appreciated!"}}
 

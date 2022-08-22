@@ -7,7 +7,7 @@ Feature: Service client GET
     * url url
 
   Scenario: Check the service get method
-    * def responsesGet = read('classpath:karate/request/responseGet.json')
+    * def responsesGet = read('classpath:karate/request/client_consult/responseGet.json')
     Given path 'users','2'
     When method get
     Then status 200

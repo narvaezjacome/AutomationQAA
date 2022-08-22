@@ -8,7 +8,7 @@ Feature: Service cliente POST
 
   Scenario: check the service POST method
     * def requestCreate = {"name": "#(name)", "job": "#(job)"}
-    * def responsePost = read(''classpath:karate/request/responsePost.json)
+    * def responsePost = read('classpath:karate/request/create_user/responsePost.json')
 
     Given path 'users'
     And request requestCreate
