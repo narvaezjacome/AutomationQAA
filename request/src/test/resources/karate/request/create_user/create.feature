@@ -15,3 +15,16 @@ Feature: Service cliente POST
     When method post
     Then status 201
     And match response == responsePost
+
+  Scenario Outline: Create a users with different firstName
+    * def requestBody = {"name": <name>, "job": <job>}
+
+    Given path 'users'
+    And request requestBody
+    When method POST
+    Then status 201
+
+    Examples:
+      | name          | job       |
+      | "Jos Alfredo" | "Teacher" |
+      | "#$%%"        | "Doctor"  |
