@@ -1,0 +1,1 @@
+{"features":2,"ignored":0,"efficiency":0.4914709345479082,"failures":{"karate.request.create_user.create":"create.feature:17 - path: $.id, actual: '490', expected: '#number', reason: not a number"},"totalTime":2913.4397,"threads":1,"scenarios":2,"failed":1,"passed":1,"version":"0.9.6","elapsedTime":5928.0}

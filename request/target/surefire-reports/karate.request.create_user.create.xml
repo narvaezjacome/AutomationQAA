@@ -1,0 +1,16 @@
+<testsuite failures="1" name="karate/request/create_user/create.feature" skipped="0" tests="1" time="0.531578">
+  <testcase classname="karate.request.create_user.create" name="check the service POST method" time="0.531578">
+    <failure message="create.feature:17 - path: $.id, actual: '490', expected: '#number', reason: not a number">* url url ................................................................. passed
+* def requestCreate = {"name": "#(name)", "job": "#(job)"} ................ passed
+* def responsePost = read('classpath:karate/request/create_user/responsePost.json') . passed
+Given path 'users' ........................................................ passed
+And request requestCreate ................................................. passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And match response == responsePost ........................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: create.feature:17 - path: $.id, actual: '490', expected: '#number', reason: not a number&#13;
+	at ✽.And match response == responsePost (create.feature:17)</failure>
+  </testcase>
+</testsuite>

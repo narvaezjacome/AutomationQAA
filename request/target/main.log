@@ -1,0 +1,33 @@
+10:56:08.554 request:
+1 > POST https://reqres.in/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 35
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+{"name":"morpheous","job":"leader"}
+
+10:56:09.809 response time in milliseconds: 1250,52
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 73eccbf7abc9c22a-MDE
+1 < Connection: keep-alive
+1 < Content-Length: 85
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 22 Aug 2022 15:56:08 GMT
+1 < Etag: W/"55-4SVK3kowP8Bu/lRvEEeieAizIfo"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2Bn7JcwsPDtNHVlcgqEcrgIW2z4BF0E7YjZXcLVF%2BCFN%2FpDGUu7Gmq6MQ9KlDrCfb7L1WNi2SYw7iXLPVxPo2PSl69JuCu%2BHaiw9rnpxkdU9Tb7TZmIrcS1zWiw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"name":"morpheous","job":"leader","id":"492","createdAt":"2022-08-22T15:56:08.587Z"}
+
+5Z"}
+
+1.235 assertion failed: path: $.id, actual: '589', expected: '#number', reason: not a number
+ contributions towards server costs are appreciated!"}}
+
