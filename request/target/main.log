@@ -1,4 +1,4 @@
-10:56:08.554 request:
+23:07:02.136 request:
 1 > POST https://reqres.in/api/users
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -8,26 +8,77 @@
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
 {"name":"morpheous","job":"leader"}
 
-10:56:09.809 response time in milliseconds: 1250,52
+23:07:03.562 response time in milliseconds: 1421,27
 1 < 201
 1 < Access-Control-Allow-Origin: *
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 73eccbf7abc9c22a-MDE
+1 < CF-RAY: 7401756d5cc83ecd-BOG
 1 < Connection: keep-alive
 1 < Content-Length: 85
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Mon, 22 Aug 2022 15:56:08 GMT
-1 < Etag: W/"55-4SVK3kowP8Bu/lRvEEeieAizIfo"
+1 < Date: Thu, 25 Aug 2022 04:07:04 GMT
+1 < Etag: W/"55-/Wf1YR9eRBJWAo0ieOS9f995FnY"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2Bn7JcwsPDtNHVlcgqEcrgIW2z4BF0E7YjZXcLVF%2BCFN%2FpDGUu7Gmq6MQ9KlDrCfb7L1WNi2SYw7iXLPVxPo2PSl69JuCu%2BHaiw9rnpxkdU9Tb7TZmIrcS1zWiw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Db5gj7CEZDsXeLe3LXlYnjN968Be616WtD38M0Khco7hlq%2B6mCVVnan%2Fx3IdFY6pZAA5s57npCHFHsssQbX5RB%2BUjqhvfJycv8UAmpTwS37%2BG4pyXxJ4aHllnA%3D%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-{"name":"morpheous","job":"leader","id":"492","createdAt":"2022-08-22T15:56:08.587Z"}
+{"name":"morpheous","job":"leader","id":"814","createdAt":"2022-08-25T04:07:04.837Z"}
 
-5Z"}
+23:07:03.623 request:
+1 > POST https://reqres.in/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 38
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+{"name":"Jos Alfredo","job":"Teacher"}
 
-1.235 assertion failed: path: $.id, actual: '589', expected: '#number', reason: not a number
- contributions towards server costs are appreciated!"}}
+23:07:04.282 response time in milliseconds: 656,28
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 74017571d9383eb8-BOG
+1 < Connection: keep-alive
+1 < Content-Length: 88
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 25 Aug 2022 04:07:05 GMT
+1 < Etag: W/"58-F/QEhsrcfNDX9FZruHTh9FqUJMc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=cZImZbIOWugDxO0%2FFYdmm7UvSSMxrffasXozGS6%2FKp1ImEgy6BhAAqV0zEIW8dPPAjXHCKRmV3uq8W5b7l6eFYjzjDGbmw5Codb039Ng%2BOMyJYaYuyabIlgLAg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"name":"Jos Alfredo","job":"Teacher","id":"576","createdAt":"2022-08-25T04:07:05.565Z"}
+
+23:07:04.312 request:
+1 > POST https://reqres.in/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 30
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_342)
+{"name":"#$%%","job":"Doctor"}
+
+23:07:04.887 response time in milliseconds: 572,19
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7401757609863efa-BOG
+1 < Connection: keep-alive
+1 < Content-Length: 80
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 25 Aug 2022 04:07:06 GMT
+1 < Etag: W/"50-V+6zwTSbuDvsbij5VqTjA9h6Yw4"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3Jzan1XT0tPwfrZxz%2Fde7%2BrREoVnD6Pg4PiAiGE8CUoLheEK3p8EygWzp88UP53OQUza2FZx%2FhWbpRg9RuR3NBsHVsBJ4uwL8DTtitt62%2Bnsvvy4axib%2BPEGdQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"name":"#$%%","job":"Doctor","id":"209","createdAt":"2022-08-25T04:07:06.182Z"}
 
